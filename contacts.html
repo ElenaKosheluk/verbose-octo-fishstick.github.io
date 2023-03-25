@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="listen.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script async src="./script.js"></script>
+</head>
+<body>
+    <div class="all">
+        <header class="header">
+            <a class="logo" href="index.html">
+                <img src="img/logo.svg" alt="Логотип">
+            </a>
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu_list">
+                        <a class="menu_link" href="./inex.html">Главная</a>
+                    </li>
+                    <li class="menu_list">
+                         <a class="menu_link" href="./students.html">Студенты</a>
+                    </li>
+                    <li class="menu_list">
+                        <a class="menu_link" href="./course.html">О курсе</a>
+                    </li>
+                    <li class="menu_list">
+                        <a class="menu_link menu_link_active" href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <button name="button" class="button_come">Войти</button>
+            </nav>
+            <button class="burger-button"></button>
+        </header>
+        <main class="content-contacts">
+            <div class="content-block">
+                <h2 class="subject">Как нас найти &#128506;</h2>
+            </div>    
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76036.02854418986!2d30.300793799823772!3d59.94747754974897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963110ebe9ea5b%3A0x86b0025c5a84a071!2z0JTQstC-0YDRhtC-0LLQsNGPINC_0LsuLCAyLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDAw!5e0!3m2!1sru!2sru!4v1677072820976!5m2!1sru!2sru"  height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="content-block">
+                <p class="contacts_text">Наши контакты</p>
+                <p class="adres">Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000<br><br><a class="number" href="tel:+78125555555">Тел: +7 (812) 555-55-55</a></p>
+            </div>
+        </main>
+    </div>    
+    <footer class="footer">
+        <p>2023 &copy; 
+            <a class="footer_a" href="#" >учебный центр</a>
+        </p>
+    </footer>
+    <div class="modal__overlay">
+        <form class="modal_form">
+            <h2 class="modal_title">Войти на сайт</h2>
+            <input class="modal_input" type="text" placeholder="Логин">
+            <input class="modal_input" type="password" placeholder="Пароль">
+            <button name="button" class="button_come" type="submit">Войти</button>
+            <button class="close-button" type="button"></button>
+        </form>
+    </div> 
+</body>
+</html>

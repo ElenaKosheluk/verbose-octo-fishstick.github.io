@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.all{
+    flex-grow: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    font-family: 'Roboto', sans-serif;
+    background: #213B7E;  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc(50% - 1286px / 2);
+    padding-right: calc(50% - 1286px / 2);
+}
+.logo{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc(50% - 1286px / 2);
+    padding-right: calc(50% - 1286px / 2); 
+}
+.menu{
+    display: flex;
+    list-style-type: none;
+    margin-left: 54px;
+}
+.menu_link{
+    padding: 28px 18px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-decoration-line: underline;
+    display: block;
+}
+.menu_link_active{
+    background: #FFFFFF; 
+    text-decoration: none;
+    color: #213B7E;
+}
+.button_come{
+    width: 153px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #EA5D21;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.content{
+    font-family: 'Roboto', sans-serif;
+    max-width: 911px;
+    margin: 0 auto;
+    padding: 32px;
+}
+.title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    margin-top: 33px;
+    margin-bottom: 25px;
+}
+.photo{
+    max-width: 100%;
+}
+.content_info{
+    display: flex;
+    justify-content: space-between;
+}
+.subtitle{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.about_text{
+    width: 634px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.text_style{
+    font-weight: bold;
+}
+.text_color{
+    color: #EA5D21;
+    font-style: italic;
+}
+.heading{ 
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #646464;
+    width: 129px; 
+    margin-top: 42px;
+}
+.footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5);
+    background: #213B7E;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 187px;
+    padding-left: calc(50% - 1268px / 2);
+    padding-right: calc(50% - 1268px / 2);
+    height: 60px;
+}
+.footer_a{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.5);   
+}
+.modal__overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;  
+}
+.modal_visible{
+    display: flex;
+    z-index: 2;
+}
+.modal_form{
+    background-color: white;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;  
+    align-items: center; 
+    border: 1px solid #EA5D21;
+    position: relative;
+    border-radius: 15px;
+}
+.modal_title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 36px;
+    text-align: center;
+}
+.modal_input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    border: 1px solid #EA5D21;
+    width: 100%;
+    margin-bottom: 56px;
+    padding-top: 17px;
+    padding-left: 14px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.close-button{
+    background-image: url(./img/cros.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    top: -30px;
+    right: -40px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;   
+}
+.burger-button{
+    background-image: url(./img/iconsmenu.svg);
+    width: 80px;
+    height: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+.burger-button_opened{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    background-image: url(./img/iconsblmenu.svg);   
+}
+
+
+/*Студенты*/
+.content-students{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 36px;
+    color: #000000; 
+    padding-left: calc(50% - 1202px / 2);
+    padding-right: calc(50% - 1202px / 2);
+}
+.subject{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    margin-top: 33px;
+    margin-bottom: 25px;
+    padding: 16px;
+}
+.students{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.student{
+    width: 200px;
+    position: relative;
+}
+.new{
+    position: absolute;
+    top: -12px;
+    right: -13px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #3AA828;
+    border-radius: 20px;
+    padding: 1px 2px 1px 5px;
+}
+.name{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000; 
+    text-align: center;
+}
+/*О курсе*/
+.content-course{
+    font-family: 'Roboto', sans-serif;
+    padding-left: calc(50% - 820px / 2);
+    padding-right: calc(50% - 820px / 2);
+}
+.course{
+    margin-top: 24px;
+}
+.look{
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+}
+.images{
+    max-width: 100%;
+}
+/*Контакты*/
+.content-contacts{
+    font-family: 'Roboto', sans-serif;
+    padding-left: calc(50% - 1286px / 2);
+    padding-right: calc(50% - 1286px / 2);
+}
+.content-block{
+    padding-left: calc(50% - 911px / 2);
+    padding-right: calc(50% - 911px / 2);
+}
+.map{
+    min-width: 100%;
+   
+}
+.contacts_text{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 15px;
+    margin-bottom: 10px;  
+}
+.adres{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.number{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+/*Стили для планшета*/
+@media(max-width: 768px) {   
+    .header{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .burger-button{
+        display: block;
+    }
+    .navigation{
+        position: fixed;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        bottom: 350px;
+        width: 50%;
+        background-color: #213B7E;
+        display: grid;
+        justify-content: center;
+        display: none;
+    }
+    .navigation_visible{
+        display: grid;
+        z-index: 1;
+    }
+    .menu{
+        margin-left: 0;
+        margin-top: 100px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu_link{
+        font-size: 18px;
+        padding: 20px 14px;
+    }
+    .content{
+        max-width: 736px;
+        padding: 16px;
+    }
+   .about_text{
+        width: 90%;
+   }
+   .content-students{
+        padding-left: calc(50% - 736px / 2);
+        padding-right: calc(50% - 736px / 2);
+   }
+   .content-course{
+        padding-left: calc(50% - 736px / 2);
+        padding-right: calc(50% - 736px / 2);
+   }
+   .content-block{
+        padding-left: calc(50% - 736px / 2);
+        padding-right: calc(50% - 736px / 2);
+   }
+   .map{
+        padding-left: calc(50% - 768px / 2);
+        padding-right: calc(50% - 768px / 2);
+   }
+}
+    
+/*Стили для телефона*/
+@media(max-width: 425px) {
+    .header{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .menu_link{
+        font-size: 15px;
+        padding: 20px 9px;
+    }
+    .button_come{
+        width: 80px;
+        font-size: 15px;
+    }
+    .content {
+        max-width: 425px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .content_info{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
+    }
+    .content-students{
+        padding-left: 16px;
+        padding-right: 16px;
+        justify-content: center;
+    }
+    .students{
+        justify-content: center;
+    }
+    .content-course{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .content-block{
+        padding-left: 16px;
+        padding-right: 16px;
+   }
+}
