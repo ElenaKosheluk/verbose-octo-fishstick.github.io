@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студенты</title>
+    <link rel="stylesheet" href="./listen.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script async src="./script.js"></script>
+</head>
+<body>
+    <div class="all">
+        <header class="header">
+            <a class="logo" href="index.html">
+                <img src="img/logo.svg" alt="Логотип">
+            </a>
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu_list">
+                        <a class="menu_link" href="./index.html">Главная</a>
+                    </li>
+                    <li class="menu_list">
+                         <a class="menu_link menu_link_active " href="./students.html">Студенты</a>
+                    </li>
+                    <li class="menu_list">
+                        <a class="menu_link" href="./course.html">О курсе</a>
+                    </li>
+                    <li class="menu_list">
+                        <a class="menu_link" href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <button name="button" class="button_come">Войти</button>
+            </nav>
+            <button class="burger-button"></button>
+        </header>
+        <main class="content-students">
+            <h2 class="subject">Студенты потока 08.02.2020 &#128103; &#128102;</h2>
+            <div class="students">
+                <div class="student">
+                    <img width="200" height="270" src="./img/student.jpg" alt="Студент1">
+                    <p class="name">Василий Иванов</p>
+                </div>
+                <div class="student">
+                    <img width="200" height="270" src="./img/student.jpg" alt="Студент2">
+                    <p class="name">Мария Александровна</p>
+                    <p class="new">НОВИЧОК</p>
+                </div>
+                <div class="student">
+                    <img width="200" height="270" src="./img/student.jpg" alt="Студент3">
+                    <p class="name">Мария Александровна</p>
+                </div>
+                <div class="student">
+                    <img width="200" height="270" src="./img/student.jpg" alt="Студент4">
+                    <p class="name">Василий Иванов</p>
+                </div>
+                <div class="student">
+                    <img width="200" height="270" src="./img/student.jpg" alt="Студент5">
+                    <p class="name">Василий Иванов</p>
+                </div>
+            </div>
+        </main>
+    </div>    
+    <footer class="footer">
+        <p>2023 &copy; 
+            <a class="footer_a" href="#" >учебный центр</a>
+        </p>
+    </footer>
+    <div class="modal__overlay">
+        <form class="modal_form">
+            <h2 class="modal_title">Войти на сайт</h2>
+            <input class="modal_input" type="text" placeholder="Логин">
+            <input class="modal_input" type="password" placeholder="Пароль">
+            <button name="button" class="button_come" type="submit">Войти</button>
+            <button class="close-button" type="button"></button>
+        </form>
+    </div>    
+</body>
+</html>
